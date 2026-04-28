@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+<!-- META DATI BASE :fondamentali della pagina.
+
+PERCHÉ:
+- charset UTF-8 → permette caratteri speciali (accenti, simboli)
+- viewport → rende il sito responsive su dispositivi mobili
+
+ -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- TITOLO DELLA PAGINA :mostrato nella tab del browser.
+ 
+
+PERCHÉ:
+- importante per SEO (indicizzazione nei motori di ricerca)
+- aiuta l’utente a identificare la pagina aperta
+
+-->
+<title>OP Oliveti Terra di Bari</title>
+
+
+<!-- COLLEGAMENTO AL FILE CSS
+
+ PERCHÉ:
+- separa contenuto (HTML) da presentazione (CSS)
+- migliora manutenzione e riutilizzo del codice
+ -->
+<link rel="stylesheet" href="style.css">
+
+<!-- FONT GOOGLE:
+ Import dei font da Google Fonts.
+
+PERCHÉ:
+- migliora estetica e leggibilità
+- permette uso di font personalizzati non presenti di default
+- mantiene coerenza tipografica su tutti i dispositivi -->
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR FISSA IN ALTO PER NAVIGAZIONE:
+ Header con navbar fissa.
+
+PERCHÉ:
+- garantisce accesso costante alla navigazione
+- migliora usabilità su pagine lunghe
+- rafforza identità del sito sempre visibile
+
+-->
+
+<header class="navbar">
+<div class="logo">OP Oliveti Terra di Bari</div>
+
+
+<!-- LINK INTERNI PER SCROLL NELLA PAGINA :
+
+PERCHÉ:
+- permettono lo scroll alle sezioni senza ricaricare la pagina
+- migliorano UX e velocità di navigazione
+- rendono il sito una single-page application (SPA-like)
+ 
+
+
+-->
+<nav>
+<a href="#chi">Chi siamo</a>
+<a href="#modello">Modello</a>
+<a href="#dati">Dati</a>
+<a href="#sostenibilita">Sostenibilità</a>
+<a href="#report">Report</a>  
+<a href="#certificazioni">Certificazioni</a>
+<a href="#documenti">Documenti</a> 
+</nav>
+
+
+<!-- BOTTONE CONTATTI -->
+<a href="#contatti" class="btn">Contatti</a>
+</header>
+
+<!-- CONTENUTO PRINCIPALE DELLA PAGINA -->
+<main>
+
+<!-- HERO: SEZIONE PRINCIPALE DI IMPATTO
+ 
+PERCHÉ:
+- comunica subito identità e messaggio principale
+- cattura attenzione dell’utente (above the fold)
+- include call-to-action per guidare la navigazione
+
+-->
+<section class="hero">
+<div class="hero-overlay"></div>
+
+<div class="hero-content">
+<span class="badge">ECCELLENZA PUGLIESE</span>
+
+<h1>OP Oliveti <br><span>Terra di Bari</span></h1>
+
+<p>
+Cooperativa agricola leader nella produzione di olio extravergine di oliva, impegnata nella sostenibilità ambientale, economica e sociale.
+</p>
+
+<!-- CALL TO ACTION 
+
+ PERCHÉ:
+- guida l’utente verso un’azione specifica
+- aumenta interazione e coinvolgimento
+- migliora conversione (navigazione verso contenuti chiave)
+-->
+<a href="#dati" class="cta">Scopri di più ↓</a>
+</div>
+</section>
+
+
+
+
+<!-- SEZIONE INTRODUTTIVA ZIENDALE :
+
+ 
+PERCHÉ:
+- presenta identità e contesto dell’organizzazione
+- costruisce fiducia con l’utente
+- fornisce informazioni base prima dei dati e servizi
+
+-->
+<section id="chi" class="section">
+<div class="grid">
+
+<div>
+<h2 class="section-title">L'azienda</h2>
+
+<h3 class="highlight-text">
+Una cooperativa agricola nel cuore della Puglia
+</h3>
+
+
+<!-- DESCRIZIONE AZIENDA -->
+<p class="normal-text">
+L' Organizzazione di Produttori OP Oliveti Terra di Bari è una cooperativa agricola che esiste dal 1974 e lavora nel settore degli olivi nella provincia di Bari.
+
+Questo gruppo unisce più di 5.800 produttori e diverse cooperative locali, prendendosi cura della coltivazione, della trasformazione e della vendita dell'olio extravergine di oliva.
+
+Il loro obiettivo è promuovere la qualità, la possibilità di rintracciare la provenienza dei prodotti e valorizzare il territorio della Puglia.
+</p>
+</div>
+
+
+<!-- IMMAGINE : per supporto visivo.
+
+PERCHÉ:
+- rafforza il contenuto testuale
+- migliora engagement visivo
+- rende la sezione più comprensibile e meno “pesante”
+
+
+-->
+<div class="image-box">
+<img src="immagini/olive.jpeg" alt="Oliveto pugliese">
+</div>
+
+</div>
+</section>
+
+<!-- MODELLO PRODUTTIVO -->
+<section id="modello" class="section model-section">
+
+<p class="section-subtitle center">MODELLO PRODUTTIVO</p>
+
+<h2 class="section-title-big center">Sistema cooperativo</h2>
+
+<p class="normal-text center">
+Il modello cooperativo di OP Oliveti Terra di Bari si basa sulla collaborazione tra produttori locali, con l’obiettivo di creare una filiera più equa, trasparente e sostenibile.
+</p>
+
+
+<!-- CARD CON LE CARATTERISTICHE DEL MODELLO:
+ Card informative sul modello cooperativo.
+
+PERCHÉ:
+- suddividono contenuti complessi in blocchi leggibili
+- migliorano scansione visiva
+- facilitano comprensione rapida dei concetti chiave
+
+
+-->
+<div class="model-grid">
+
+<div class="model-card">
+<div class="model-icon">🤝</div>
+<h3>Collaborazione</h3>
+<p>I produttori lavorano insieme condividendo risorse, competenze e obiettivi comuni.</p>
+</div>
+
+<div class="model-card">
+<div class="model-icon">🌍</div>
+<h3>Filiera integrata</h3>
+<p>Controllo completo del processo produttivo, dalla coltivazione alla commercializzazione.</p>
+</div>
+
+<div class="model-card">
+<div class="model-icon">💰</div>
+<h3>Valore equo</h3>
+<p>Riduzione degli intermediari e maggiore valore riconosciuto ai produttori locali.</p>
+</div>
+
+<div class="model-card">
+<div class="model-icon">📈</div>
+<h3>Sviluppo locale</h3>
+<p>Supporto all’economia del territorio e crescita sostenibile della comunità agricola.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- DATI AZIENDALI -->
+<section id="dati" class="section impact">
+
+  <h2 class="section-title-big center">Dati aziendali e risultati</h2>
+
+  <p class="normal-text center">
+    I dati riportati derivano dal bilancio e dal report di sostenibilità dell’OP Oliveti Terra di Bari,
+    e mostrano l’impatto economico, sociale e produttivo della cooperativa.
+  </p>
+
+
+  <!-- CARD CON KPI :
+  PERCHÉ:
+- mostrano dati quantitativi in modo immediato
+- aumentano credibilità del contenuto
+- facilitano confronto e lettura rapida
+  
+  
+  -->
+  <div class="stats">
+
+    <div class="card">
+      <div class="icon">👥</div>
+      <h3>5.804</h3>
+      <p>Soci produttori coinvolti nella cooperativa</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🫒</div>
+      <h3>6+ mln kg</h3>
+      <p>Olio extravergine di oliva conferito annualmente</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">💶</div>
+      <h3>64,6 mln €</h3>
+      <p>Valore complessivo della produzione</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🌍</div>
+      <h3>Filiera</h3>
+      <p>Integrata, tracciabile e sostenibile</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- PILASTRI DELLA SOSTENIBILITÀ -->
+<section id="sostenibilita" class="section pillars-section">
+
+<h2 class="section-title-big">Sostenibilità</h2>
+
+<div class="pillars">
+
+<div class="pillar">
+<div class="pillar-icon green">🌱</div>
+<h3>Ambiente</h3>
+<p>
+Gestione efficiente delle risorse agricole e riduzione dell’impatto ambientale.
+</p>
+</div>
+
+<div class="pillar">
+<div class="pillar-icon blue">💧</div>
+<h3>Filiera</h3>
+<p>
+Tracciabilità completa della produzione per garantire qualità e trasparenza.
+</p>
+</div>
+
+<div class="pillar">
+<div class="pillar-icon green">🌿</div>
+<h3>Natura</h3>
+<p>
+Tutela della biodiversità e valorizzazione del territorio pugliese.
+</p>
+</div>
+
+<div class="pillar">
+<div class="pillar-icon gray">💼</div>
+<h3>Economia</h3>
+<p>
+Supporto a oltre 5.800 produttori locali e sviluppo economico sostenibile.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- REPORT DI SOSTENIBILITÀ -->
+<section id="report" class="section">
+
+<h2 class="section-title-big center">Report di sostenibilità 2024</h2>
+
+<p class="normal-text center">
+Bilancio di Sostenibilità dell’OP Oliveti Terra di Bari.<br>
+Una sintesi dei principali impatti ambientali, sociali ed economici della cooperativa.
+</p>
+
+<!-- 
+
+Blocco informativo: sostenibilità ambientale.
+
+PERCHÉ:
+- suddivide il report in aree tematiche
+- migliora leggibilità e organizzazione dei contenuti
+
+-->
+
+<!-- BLOCCO 1 -->
+<div class="report-block">
+
+  <img src="immagini/oliveto.jpg" alt="Oliveto pugliese" class="report-img">
+
+  <div class="report-text">
+    <h3>🌿 Ambiente</h3>
+    <p>
+      Riduzione dell’uso di prodotti chimici,<br>
+      tutela del suolo e della biodiversità,<br>
+      promozione di pratiche agricole sostenibili e a basso impatto.
+    </p>
+  </div>
+
+</div>
+
+<!-- BLOCCO 2 -->
+<div class="report-block reverse">
+
+  <img src="immagini/raccolta-olive.jpg" alt="Raccolta olive" class="report-img">
+
+  <div class="report-text">
+    <h3>👥 Impatto sociale</h3>
+    <p>
+      Oltre <strong>5.800 produttori coinvolti</strong>.<br>
+      Sostegno alle comunità rurali,<br>
+      valorizzazione del lavoro agricolo e cooperazione territoriale.
+    </p>
+  </div>
+
+</div>
+
+<!-- BLOCCO 3 -->
+<div class="report-block">
+
+  <img src="immagini/frantoio.webp" alt="Frantoio olive" class="report-img">
+
+  <div class="report-text">
+    <h3>🏛 Governance</h3>
+    <p>
+      Gestione trasparente e partecipata.<br>
+      Decisioni condivise tra i soci<br>
+      e distribuzione equa del valore lungo la filiera.
+    </p>
+  </div>
+
+</div>
+
+</section>
+
+<!-- KPI FINALI -->
+<div class="stats-mini">
+
+  <div class="stat-item">
+    <span class="stat-number">5.804</span>
+    <span class="stat-label">Produttori agricoli</span>
+  </div>
+
+  <div class="stat-item">
+    <span class="stat-number">6+ mln kg</span>
+    <span class="stat-label">Olio prodotto annualmente</span>
+  </div>
+
+  <div class="stat-item">
+    <span class="stat-number">64,6 mln €</span>
+    <span class="stat-label">Valore della produzione</span>
+  </div>
+
+  <div class="stat-item">
+    <span class="stat-number">100%</span>
+    <span class="stat-label">Filiera tracciata</span>
+  </div>
+
+
+
+</div>
+
+</section>
+
+<!-- CERTIFICAZIONI -->
+<section id="certificazioni" class="section">
+
+  <p class="section-subtitle center">QUALITÀ</p>
+
+  <h2 class="section-title-big center">Certificazioni</h2>
+
+  <div class="certificazioni-grid">
+
+    <div class="cert-card">
+      <h3>DOP Terra di Bari</h3>
+      <p class="normal-text">
+        Certifica l’origine geografica dell’olio e il rispetto di standard qualitativi elevati.
+      </p>
+    </div>
+
+    <div class="cert-card">
+      <h3>Produzione Biologica</h3>
+      <p class="normal-text">
+        Garantisce l’utilizzo di metodi agricoli sostenibili senza sostanze chimiche.
+      </p>
+    </div>
+
+    <div class="cert-card">
+      <h3>ISO 22005</h3>
+      <p class="normal-text">
+        Assicura la tracciabilità della filiera alimentare e la sicurezza del prodotto.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- DOCUMENTI SCARICABILI:
+ Sezione documenti con download diretto.
+
+PERCHÉ:
+- consente accesso immediato a risorse esterne (PDF)
+- migliora trasparenza e affidabilità
+- utilizza attributo "download" per esperienza utente migliore
+ -->
+<section id="documenti" class="section docs">
+
+  <div class="docs-box">
+
+   <!-- TESTO -->
+    <div class="docs-text">
+
+      <h2>Trasparenza in ogni dato</h2>
+
+      <p>
+        Ogni informazione è basata su dati ufficiali, bilanci e comunicazioni aziendali.<br>
+        Il progetto è stato rielaborato a scopo educativo universitario.
+      </p>
+
+    </div>
+
+   <!-- LINK DOWNLOAD -->
+    <div class="docs-downloads">
+
+      <a href="pdf/report-sostenibilità.docx" class="doc-card green" download>
+        <div class="doc-title">Report Sostenibilità</div>
+        <div class="doc-sub">Documento ufficiale del progetto</div>
+      </a>
+
+      <a href="pdf/certificazioni-qualità.docx" class="doc-card olive" download>
+        <div class="doc-title">Certificazione Qualità</div>
+        <div class="doc-sub">Standard e conformità aziendale</div>
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CONTATTI -->
+<section id="contatti" class="section contact-section">
+
+  <p class="section-subtitle center">CONTATTI</p>
+  <h2 class="section-title-big center">Scrivici o chiamaci</h2>
+
+  <!-- CARD CONTATTI interattive:
+  
+PERCHÉ:
+- ogni card rappresenta un canale diretto
+- link cliccabili (mailto, tel, WhatsApp)
+- migliorano accessibilità e conversione
+ -->
+  <div class="contact-cards">
+
+    <a href="mailto:info@olivetiterradibari.it" class="contact-card">
+      <div class="contact-icon">✉️</div>
+      <div class="contact-label">Email</div>
+      <div class="contact-value">info@olivetiterradibari.it</div>
+    </a>
+
+    <a href="tel:0803324674" class="contact-card">
+      <div class="contact-icon">📞</div>
+      <div class="contact-label">Telefono</div>
+      <div class="contact-value">080.332.4674</div>
+    </a>
+
+    <a href="https://wa.me/393406298100" target="_blank" rel="noopener" class="contact-card">
+      <div class="contact-icon">💬</div>
+      <div class="contact-label">WhatsApp</div>
+      <div class="contact-value">340.629.8100</div>
+    </a>
+
+  </div>
+
+</section>
+
+</main>
+
+<!-- FOOTER con informazioni finali.
+
+PERCHÉ:
+- contiene dati riassuntivi e crediti
+- chiude la pagina in modo strutturato
+- punto di riferimento per informazioni legali o secondarie -->
+<footer class="footer">
+
+<div class="footer-container">
+
+  <div class="footer-left">
+    OP Oliveti Terra di Bari
+  </div>
+
+  <div class="footer-center">
+    
+  </div>
+
+  <div class="footer-right">
+    © 2026 - Progetto universitario
+  </div>
+
+</div>
+
+
+</footer>
+
+</body>
+</html>
